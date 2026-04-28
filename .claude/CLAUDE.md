@@ -110,6 +110,7 @@ root/
 - Conventional Commits: `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`
 - Linear 이슈 연결: `feat(spots): 장소 목록 페이지 구현 [CUR-12]`
 - 스코프는 feature 또는 package명 사용
+- 커밋 메시지는 반드시 한글로 작성
 
 ### import 규칙
 - 절대경로 alias: `@backpakers/shared`, `@backpakers/api`, `@backpakers/store`

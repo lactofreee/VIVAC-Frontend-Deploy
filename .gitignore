@@ -3,3 +3,8 @@
 
 # macOS
 .DS_Store
+
+# 서브 레포 의존성 및 빌드 산출물
+VIVAC_Repo/node_modules/
+VIVAC_Repo/next-env.d.ts
+VIVAC_Repo/.next/
