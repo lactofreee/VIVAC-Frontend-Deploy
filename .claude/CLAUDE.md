@@ -1,4 +1,4 @@
-# Backpakers (Curve)
+# VIVAC
 
 국내 백패킹/미니멀 캠핑 유저를 위한 통합 장소 탐색 앱.
 공공 API(GoCamping, 산림청, 국립공원) 데이터를 수집·정제하여 야영 가능 장소를 통합 제공한다.
@@ -10,7 +10,7 @@
 
 ## 프로젝트 개요
 
-- **코드네임**: Curve
+- **코드네임**: Vivac
 - **타겟**: 20~30대 국내 BPL/UL 백패킹 및 미니멀 캠핑 이용자
 - **핵심 가치**: "어디서 자도 되는가"에 대한 신뢰할 수 있는 정보 제공
 - **프로젝트 관리**: Notion(기획), Linear(스프린트)
@@ -83,7 +83,7 @@ root/
 
 ### Web 앱 전용 설정 (commands, feature 구조, App Router 주의사항)
 
-@../Curve_Repo/CLAUDE.md
+@../VIVAC_Repo/CLAUDE.md
 
 ### TypeScript
 - `strict: true` 필수. `any` 사용 금지 (`unknown` + 타입 가드로 대체)
@@ -108,14 +108,14 @@ root/
 
 ### 커밋
 - Conventional Commits: `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`
-- Linear 이슈 연결: `feat(spots): 장소 목록 페이지 구현 [CUR-12]`
+- Linear 이슈 연결: `feat(spots): 장소 목록 페이지 구현 [VVC-12]`
 - 스코프는 feature 또는 package명 사용
 - 커밋 메시지는 반드시 한글로 작성
 
 ### import 규칙
-- 절대경로 alias: `@backpakers/shared`, `@backpakers/api`, `@backpakers/store`
+- 절대경로 alias: `@vivac/shared`, `@vivac/api`, `@vivac/store`
 - 앱 내부: `@/features/`, `@/app/`
-- 순서: 외부 라이브러리 → `@backpakers/*` → `@/features/*` → 상대경로
+- 순서: 외부 라이브러리 → `@vivac/*` → `@/features/*` → 상대경로
 - barrel export(`index.ts`)는 package 루트에서만 사용. feature 내부에서는 직접 경로 import
 
 ### 컴포넌트
