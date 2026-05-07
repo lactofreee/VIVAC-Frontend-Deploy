@@ -1,0 +1,20 @@
+{
+  "name": "@vivac/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./index.mjs",
+    "./next": "./next.mjs",
+    "./base": "./base.mjs"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint-config-next": "16.2.4",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  }
+}

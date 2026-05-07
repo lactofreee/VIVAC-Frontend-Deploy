@@ -1,0 +1,24 @@
+{
+  "extends": "@vivac/tsconfig/nextjs",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@vivac/shared": ["../../packages/shared/src/index.ts"],
+      "@vivac/shared/*": ["../../packages/shared/src/*"],
+      "@vivac/api": ["../../packages/api/src/index.ts"],
+      "@vivac/api/*": ["../../packages/api/src/*"],
+      "@vivac/store": ["../../packages/store/src/index.ts"],
+      "@vivac/store/*": ["../../packages/store/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}

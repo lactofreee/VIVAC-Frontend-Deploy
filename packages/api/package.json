@@ -1,0 +1,29 @@
+{
+  "name": "@vivac/api",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client/index.ts",
+    "./queries": "./src/queries/index.ts",
+    "./mocks": "./src/mocks/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@vivac/shared": "workspace:*",
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
+    "@vivac/eslint-config": "workspace:*",
+    "@vivac/tsconfig": "workspace:*",
+    "msw": "^2.8.4",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "react": "^19.0.0"
+  }
+}
