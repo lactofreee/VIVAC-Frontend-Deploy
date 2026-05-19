@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "홈 — VIVAC",
 };
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <div className="flex flex-col gap-6 p-4">
       <h1 className="text-xl font-semibold">오늘의 추천 장소</h1>

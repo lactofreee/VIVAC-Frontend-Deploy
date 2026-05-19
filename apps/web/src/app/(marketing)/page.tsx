@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "VIVAC — 백패킹 캠핑지 탐색",
@@ -16,7 +18,7 @@ export default function MarketingPage() {
           국내 백패킹·미니멀 캠핑 유저를 위한 통합 장소 탐색
         </p>
       </div>
-      {/* CTA — P1-4 랜딩페이지 구현 시 추가 */}
+      <Link href="/home"><Button>시작하기</Button></Link>
     </section>
   );
 }

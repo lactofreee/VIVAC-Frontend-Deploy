@@ -39,7 +39,7 @@
 - TanStack Query, Zustand, Axios, Zod, React Hook Form
 - Tailwind CSS
 - MSW (백엔드 준비 전 API 모킹)
-- ESLint (린팅), Turborepo + pnpm (모노레포)
+- ESLint (린팅), Turborepo + yarn (모노레포)
 - 향후 React Native 추가 예정 (모노레포 내 `apps/mobile`)
 
 ### 백엔드 (미확정)
@@ -64,8 +64,12 @@
 root/
 ├── apps/
 │   ├── web/                  # Next.js PWA (MVP)
-│   │   └── app/              # App Router — 라우팅 껍데기만 담당
-│   └── mobile/               # React Native (향후)
+│   │   ├── src/
+│   │   │   ├── app/          # App Router — 라우팅 껍데기만 담당
+│   │   │   ├── features/     # 기능 단위 모듈 (컴포넌트·훅·유틸 응집)
+│   │   │   └── components/   # 앱 공통 UI 컴포넌트
+│   │   └── public/
+│   └── mobile/               # React Native (향후 추가 예정)
 ├── packages/
 │   ├── shared/               # 플랫폼 무관 유틸, 상수, 타입
 │   │   ├── types/            # 도메인 타입 + Zod 스키마
@@ -83,7 +87,7 @@ root/
 
 ### Web 앱 전용 설정 (commands, feature 구조, App Router 주의사항)
 
-@../VIVAC_Repo/CLAUDE.md
+@apps/web/CLAUDE.md
 
 ### TypeScript
 - `strict: true` 필수. `any` 사용 금지 (`unknown` + 타입 가드로 대체)
@@ -95,7 +99,7 @@ root/
 ### ESLint
 - `@typescript-eslint/strict-type-checked` 프리셋 기반
 - `no-explicit-any: error`, `no-unused-vars: error`
-- import 순서 강제 (`eslint-plugin-import`): 외부 → `@backpakers/` → `@/features` → 상대경로
+- import 순서 강제 (`eslint-plugin-import`): 외부 → `@vivac/` → `@/features` → 상대경로
 - `packages/` 간 순환 의존 금지
 
 ### 네이밍
