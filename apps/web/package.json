@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
+    "@tanstack/react-query": "^5.100.11",
     "@vivac/api": "workspace:*",
     "@vivac/shared": "workspace:*",
     "@vivac/store": "workspace:*",
@@ -37,5 +38,10 @@
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
