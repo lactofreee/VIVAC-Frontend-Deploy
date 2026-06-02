@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "turbo run build --filter=@vivac/web",
-  "outputDirectory": "apps/web/.next",
-  "installCommand": "yarn install"
+  "buildCommand": "cd ../.. && turbo run build --filter=@vivac/web",
+  "outputDirectory": ".next",
+  "installCommand": "cd ../.. && yarn install"
 }
