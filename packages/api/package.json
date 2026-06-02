@@ -20,6 +20,7 @@
     "@types/react": "^19.2.14",
     "@vivac/eslint-config": "workspace:*",
     "@vivac/tsconfig": "workspace:*",
+    "eslint": "^9.0.0",
     "msw": "^2.8.4",
     "typescript": "^5"
   },
