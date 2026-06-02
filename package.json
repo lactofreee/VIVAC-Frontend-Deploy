@@ -22,6 +22,7 @@
     "ws:list": "yarn workspaces list"
   },
   "devDependencies": {
+    "eslint": "^9.0.0",
     "turbo": "^2.9.9",
     "typescript": "^5.8.3"
   }
